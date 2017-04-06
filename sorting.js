@@ -7,9 +7,14 @@ var students = [
 
 
 var sortingLogic = function(a, b) {
+  //!!!!
+  // the [0] is the first letter of name
+  //!!!!
   if (a.name[0] === b.name[0]) {
+    //if names are the same find lower age
     return a.age - b.age
   } else {
+    //if first letter is before alphabetically place ahead
     if (a.name[0] < b.name[0]) {
       return -1;
     } else {
